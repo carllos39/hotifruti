@@ -242,44 +242,7 @@ footer {
     
    
 }
-table{
-    width: 80%;
-    margin: auto;
-    border: solid 1px;
-}
-table, th, td{
-    border: solid 1px
-    
-}
-caption{
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 1.1rem;
-    padding-bottom: 0.5rem;
-}
-th{
-    background-color: var(--cor-escura);
-    color: var(--cor-clara);
-    border-color: var(--cor-escura);
-    padding: 0.7rem;
-}
-td{
-    padding: 0,5rem;
-}
-td:nth-child(2){text-align: center;}
-th:last-child,td:last-child{text-align: right;}
-th:first-child{text-align: left;}
 
-tr:nth-child(odd){background-color: var(--cor-clara);}
-
-/* Pseudo elemento:befoce */
-
-td:last-child{position: relative;}
-td:last-child::before{
-    content: "R$";
-    position: absolute;
-    left: 10px;
-}
 .conteudo h2::before {content: "🤢";}
 
 
@@ -294,7 +257,7 @@ td:last-child::before{
     filter: blur(1px) brightness(150%);
 }
 /* Aplicamos  o :hover eo focus  ao seletor  de tags  "a" 
-em xvez de aplicar no "img" .Desta forma ,o acio,namento funcionará  tanto com o mouse  quanto com teclado.*/
+em vez de aplicar na "img" .Desta forma ,o acionamento funcionará  tanto com o mouse  quanto com teclado.*/
 .galeria img:hover,.galeria img:focus{
     transition: scale(1);
     border-radius: 10%;
