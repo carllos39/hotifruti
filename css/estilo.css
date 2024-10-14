@@ -7,7 +7,7 @@
 :root {
     /* variáveis para a paleta de cores */
     --cor-titulo: #4d4d4d;
-    --cor-texto: #333;
+    --cor-texto: #000;
     --cor-escura: #000;
     --cor-clara: #fff;
     --cor-intermediaria: #ececec;
