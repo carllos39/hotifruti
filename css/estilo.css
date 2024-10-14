@@ -8,7 +8,7 @@
     /* variáveis para a paleta de cores */
     --cor-titulo: #4d4d4d;
     --cor-texto: #000;
-    --cor-escura: #000;
+    --cor-escura:#FFA600;
     --cor-clara: #fff;
     --cor-intermediaria: #ececec;
 }
@@ -82,7 +82,7 @@ nav h2 a:hover,
 nav a:focus,
 .menu a:focus,
 .menu a:hover {
-    background-color: var(--cor-intermediaria);
+    background-color: #67b106;
 }
 
 /* Regra de lista ul */
