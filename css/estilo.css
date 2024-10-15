@@ -319,7 +319,10 @@ button:hover,button:focus {
     padding: 12px;
 }
 #status{font-size: 12px;}
-
+h3{
+    text-align: center;
+    color: #FFA600;
+}
 
 
 @media (min-width:570px) {
