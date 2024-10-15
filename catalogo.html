@@ -6,9 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Produtos-Hotifruti</title>
     <link rel="stylesheet" href="css/estilo.css">
-    <script>
-        
-    </script>
+    <style>
+        /* Estilo dos botões que são usados para abrir e fechar o painel do accordion */
+        .accordion {
+            background-color: #eee;
+            color: #444;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            text-align: left;
+            border: none;
+            outline: none;
+            transition: 0.4s;
+        }
+
+        /* Adiciona uma cor de fundo ao botão se ele for clicado (adiciona a classe .active com JS), e quando você passa o mouse sobre ele (hover) */
+        .active, .accordion:hover {
+            background-color: #ccc;
+        }
+
+        /* Estilo do painel do accordion. Nota: oculto por padrão */
+        .panel {
+            padding: 0 18px;
+            background-color: white;
+            display: none; /* Oculta o painel por padrão */
+            overflow: hidden;
+        }
+    </style>
+   
 </head>
 
 <body>
@@ -26,8 +51,8 @@
             </nav>
         </div>
     </header>
-
-    <main>
+<main>
+    <article>
         <article class="limitador conteudo">
             <h2>Catálogo</h2>
         <p>Confira o catálogo da Multi Frutti para explorar nossa seleção de frutas, verduras e legumes frescos. Oferecemos produtos de alta qualidade e serviços personalizados para atender às suas necessidades.
@@ -35,33 +60,55 @@
             Navegue pelas opções disponíveis e, se precisar de ajuda, nossa equipe está pronta para assisti-lo.
             
             Descubra como nossos produtos podem elevar a qualidade dos seus pratos</p>
-            <table >
-                <caption>Nossos produtos</caption>
-          
-         <tr>
-            <th>Frutas</th>
-         </tr>
-         <ul>
-            <li><a href="">frutas</a></li>
-            <li><a href="">Legumes</a></li>
-            <li><a href="">Hortaliças</a></li>
-            <li><a href="">Diversos</a></li>
-         </ul>
-     
+            
+                <h3>Nossos produtos</h3>
+    </article>
+    <div class="frutas">
+    <button class="accordion">Frutas</button>
+    <div class="panel">
+        <p>Maçã</p>
+        <p>Laranja</p>
+        <p>Banana</p>
+    </div>
 
+    <button class="accordion">Legumes</button>
+    <div class="panel">
+        <p>ma</p>
+    </div>  
 
-
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt optio dolore repellendus doloribus libero error eum iusto? Voluptates magni labore ducimus ea impedit nobis rem molestiae ipsa esse. Necessitatibus, ipsum!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores dignissimos quam neque, aperiam aliquid tenetur aliquam recusandae explicabo modi, facilis repellendus excepturi veritatis iste. Accusantium ea quisquam facere ipsum eius?</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero minus consequuntur voluptatem consequatur, similique, dicta, eveniet omnis enim sequi quidem rem illum sunt iusto sint natus! Rem reprehenderit voluptatibus dignissimos?</p>
-        </article>
-    </main>
-
-
+    <button class="accordion">Hortaliças</button>
+    <div class="panel">
+        <p></p>
+    </div>
+    </div>
+</main>
     <footer>
         <p>Hotifruti é um site fictício desenvolvido para fins educacionais &copy; <b>Senac Tito</b>
             -<time>2024</time></p>
     </footer>
+    <script>
+        // Obtém todos os elementos com a classe "accordion"
+        var accordions = document.getElementsByClassName("accordion");
+
+        // Loop por todos os accordions e adiciona um listener de evento de clique
+        for (let i = 0; i < accordions.length; i++) {
+            accordions[i].addEventListener("click", function() {
+                // Alterna a classe ativa para destacar o botão que controla o painel
+                this.classList.toggle("active");
+
+                // Obtém o painel correspondente
+                var panel = this.nextElementSibling;
+
+                // Alterna a exibição do painel
+                if (panel.style.display === "block") {
+                    panel.style.display = "none"; // Oculta o painel
+                } else {
+                    panel.style.display = "block"; // Exibe o painel
+                }
+            });
+        }
+    </script>
+
     <script src="js/menu.js"></script>
 </body>
 
