@@ -180,7 +180,7 @@ article h2 {
 }
 
 article p {
-    padding: 0.5rem 0;
+    padding: 20px;
     font-size: 1.2rem;
 }
 
@@ -220,7 +220,8 @@ address {
 }
 
 footer {
-    background-color: var(--cor-escura);
+     background-color: #4d4d4d;
+    
     color: var(--cor-clara);
     height: 30vh;
     display: flex;
