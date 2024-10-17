@@ -33,8 +33,10 @@ figure,
     padding: 0;
 }
 
-img {
-    max-width: 100%;
+
+.img{
+    align-items: center;
+   width: 100%;
 }
 
 h1 {
@@ -223,7 +225,7 @@ footer {
      background-color: #4d4d4d;
     
     color: var(--cor-clara);
-    height: 30vh;
+    height: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -244,7 +246,7 @@ footer {
    
 }
 
-.conteudo h2::before {content: "🤢";}
+.conteudo h2::before {content: "";}
 
 
 .galeria {
