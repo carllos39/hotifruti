@@ -35,8 +35,10 @@ figure,
 
 
 .img{
-    align-items: center;
-   width: 100%;
+    display:flex ;
+    justify-content: center;
+   width: 900px;
+   height:;
 }
 
 h1 {
@@ -78,6 +80,12 @@ nav h2 a {
     padding: 1rem;
     display: inline-block;
 
+}
+ h1 a:hover,
+nav a:focus,
+.menu a:focus,
+.menu a:hover {
+    background-color: #67b106;
 }
 
 nav h2 a:hover,
@@ -257,7 +265,7 @@ footer {
     border-radius: 100%;
     transform: scale(0.9);
     transition: 500ms;
-    filter: blur(1px) brightness(150%);
+    /* filter: blur(1px) brightness(150%);  */
 }
 /* Aplicamos  o :hover eo focus  ao seletor  de tags  "a" 
 em vez de aplicar na "img" .Desta forma ,o acionamento funcionará  tanto com o mouse  quanto com teclado.*/
