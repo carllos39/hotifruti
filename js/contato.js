@@ -17,7 +17,7 @@ const mensagem = formulario.querySelector("#status");
 const campoTelefone = $("#telefone");
 
 // Ativando a máscara para o telefone e cep
-$(campoTelefone).mask("(00) 0000-0000"); // Exemplo: (11) 2135-0300
+$(campoTelefone).mask("(00) 0000-00000"); // Exemplo: (11) 2135-0300
 $(campoCep).mask("00000-000"); // Exemplo: 03639-000
 
 
