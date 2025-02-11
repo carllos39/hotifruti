@@ -162,20 +162,116 @@ nav a:focus,
     border-radius: 10px;
 }
 
-/* Estilo dos botões de navegação */
-/* button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    font-size: 18px;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+}
+
+.card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 150px;
     cursor: pointer;
-    border-radius: 50%;
-    z-index: 10;
-} */
+}
+
+.card.selecionado {
+    background-color: #63A375;
+    border-color: darkseagreen;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.botoes {
+    margin-top: 20px;
+}
+
+.btn-comprar {
+    background: #FFA600;
+    color: white;
+}
+
+.btn-redefinir {
+    background: #DB2955;
+    color: white;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.resultado {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.whatsapp-sticky {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: #63A375;
+    color: white;
+    padding: 15px;
+    border-radius: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 10px;
+    box-shadow: 0 4px 6px rgb(0, 0, 0);
+}
+
+.whatsapp-sticky img {
+    width: 24px;
+    height: 24px;
+}
+
+.whatsapp-sticky:hover {
+    background-color: #7bd19f;
+}
+
+.contador {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.contador button {
+    background-color: #FFA600;
+    color: white;
+    font-weight: bold;
+}
+
+.contador span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#whatsappLink{
+    display: block;
+    margin-top: 20px;
+    background-color: #25d366;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+}
 
  button:hover {
     background-color: rgba(0, 0, 0, 0.8);
@@ -432,6 +528,15 @@ button:hover,button:focus {
 h3{
     text-align: center;
     color: #FFA600;
+}
+.containerCard .card{
+    display: inline-block;
+    
+}
+.bt{
+    display: flex;
+    gap: 5px;
+    margin-top: 5px;
 }
 
 
