@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos-Hotifruti</title>
+    <!-- Importando pluguim ligtbox -->
+    <link rel="stylesheet" href="lightbox/css/lightbox.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <style>
+        .conteudo h2::before {
+            content: "🎁";
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="limitador">
+            <h1><a href="index.html">Multifruti</a></h1>
+            <nav>
+                <h2><a href="">Menu &equiv;</a></h2>
+                <ul class="menu ">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="catalogo.html">Catálogo</a></li>
+                    <li><a href="noticias.html">Notícias</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="contato.html">Contatos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <article class="limitador conteudo">
+            <h2>Serviços</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam esse ab, molestias iste libero fugiat ipsum
+                repellat, cum sit labore distinctio consectetur temporibus rem, eligendi dolor adipisci eveniet maiores
+                aspernatur?</p>
+            <figure class="galeria">
+
+                <a data-title="Desenvolvimento de sites" data-lightbox="fotos" href="imagens/desenvolvimento-web.jpg">
+                    <img src="imagens/desenvolvimento-web-mini.jpg" alt=""></a>
+                <a data-title="Desing gráfico oimpactante" data-lightbox="fotos" href="imagens/design-grafico.jpg"><img src="imagens/design-grafico-mini.jpg"
+                        alt=""></a>
+                <a data-title="Venda e convensa" data-lightbox="fotos" href="imagens/marketing-digital.jpg"><img
+                        src="imagens/marketing-digital-mini.jpg" alt=""></a>
+                <a data-title="Prepara-se para o mercado" data-lightbox="fotos" href="imagens/consultoria-treinamento.jpg"><img
+                        src="imagens/consultoria-treinamento-mini.jpg" alt=""></a>
+
+            </figure>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio possimus deleniti sint velit
+                reiciendis enim quibusdam mollitia sit aliquid natus porro obcaecati, quia, id ullam delectus veniam,
+                dolor consequuntur voluptas.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt optio dolore repellendus doloribus
+                libero error eum iusto? Voluptates magni labore ducimus ea impedit nobis rem molestiae ipsa esse.
+                Necessitatibus, ipsum!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores dignissimos quam neque, aperiam
+                aliquid tenetur aliquam recusandae explicabo modi, facilis repellendus excepturi veritatis iste.
+                Accusantium ea quisquam facere ipsum eius?</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero minus consequuntur voluptatem
+                consequatur, similique, dicta, eveniet omnis enim sequi quidem rem illum sunt iusto sint natus! Rem
+                reprehenderit voluptatibus dignissimos?</p>
+        </article>
+    </main>
+
+
+    <footer>
+        <p>Hotfruti é um site fictício desenvolvido para fins educacionais &copy; <b>Senac Tito</b>
+            -<time>2024</time></p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="lightbox/js/lightbox.min.js"></script>
+    <script src="js/menu.js"></script>
+    <script>
+        lightbox.option({
+            albumLabel:"Foto %1 de %2"
+        });
+    </script>
+
+</body>
+
+</html>
