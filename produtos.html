@@ -23,28 +23,34 @@
         </div>
     </header>
 <main>
-    <article>
-        <div class="container">
+ 
+     <div class="container">
             <div class="card" data-preco="10">
                 <div>Produto A</div>
-           <div>R$10.00</div>
-           <input class="qualidade" type="number" id="quantidade">
+           <div>R$10.00</div>   
+           <input type="number" id="quantidade">
             </div>
             <div class="card" data-preco="20 * quantidade">
                 <div>Produto B</div>
            <div>R$20.00</div>
-           <input class="qualidade" type="number" id="quantidade">
+           <div class="card" data-preco="20 * quantidade">
+            <div>Produto B</div>
+       <div>R$20.00</div>
+       <div class="card" data-preco="20 * quantidade">
+        <div>Produto B</div>
+   <div>R$20.00</div>
+           
           
             </div>
            
         </div>
-        <div class="botões">
+        <div class="botoes">
             <button class="btn-comprar" id="btnComprar">Comprar</button>
             <button class="btn-redefinir" id="btnRedefinir">Redefinir</button>
         </div>
     
         <div class="resultado" id="resultado"></div>
-</article>
+
 
 
     <script src="js/compra.js"></script>
