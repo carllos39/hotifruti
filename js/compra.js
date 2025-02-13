@@ -1,5 +1,5 @@
 const cards = document.querySelectorAll(".card");
-let quantidade=document.querySelectorAll(".quantidade");
+let quantidade=document.getElementById(".quantidade");
 const btnRedefinir= document.getElementById("btnRedefinir");
 const btnComprar= document.getElementById("btnComprar");
 const resultado= document.getElementById("resultado");
@@ -21,9 +21,9 @@ const resultado= document.getElementById("resultado");
  btnComprar.addEventListener("click", () =>{
 
 let precoTotal = 0;
- let listaProdutos =[];
- quantidade=[];
- alert(quantidade);
+let listaProdutos =[];
+ 
+ 
 
     cards.forEach(card =>{
         if(! card.classList.contains("selecionado")){
